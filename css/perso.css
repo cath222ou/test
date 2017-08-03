@@ -1,0 +1,81 @@
+/* remove padding and scrolling from elements that contain an Accordion OR a content-div */
+	.ui-layout-center ,	/* has content-div */
+	.ui-layout-west ,	/* has Accordion */
+	.ui-layout-east ,	/* has content-div ... */
+	.ui-layout-east .ui-layout-content { /* content-div has Accordion */
+		padding: 0;
+		overflow: hidden;
+	}
+	
+.flotte {
+		float:left;
+		}
+
+.flotte1 {
+		float:left;
+		margin-left:20px;
+		}
+		
+.text1
+	{
+
+	line-height:20px;
+	} 	
+		
+.text
+	{
+	margin-left:60px;
+	line-height:20px;
+	} 
+
+#map {
+            width: 100%; height: 100%; border: 1px solid black;
+			z-index: -1;
+        }
+
+#toolbarui{
+    position: absolute;
+    left: 60px;
+    top: 1px;
+    z-index: 1000;
+	display: inline-block;
+
+  }
+  /* support: IE7 */
+  *+html #toolbarui {
+    display: inline;
+  }
+
+		
+
+  
+/*
+ * Icone toolbar
+ */
+.extent {background-image:url(../icons/earth_globe16.png) !important;}
+.zoomin {background-image:url(../icons/zoom-in16.png) !important;}
+.pan {background-image:url(../icons/hand16.png) !important;}
+.zoomout {background-image:url(../icons/zoom_out.png) !important;}
+.ruler {background-image:url(../icons/ruler.png) !important;}
+.ruler2 {background-image:url(../icons/ruler_square.png) !important;}
+.prev {background-image:url(../icons/navigation_history_active_prev.png) !important;}
+.next {background-image:url(../icons/navigation_history_active_next.png) !important;}
+.info {background-image:url(../icons/iconinfo16.png) !important;}
+
+#selectionCouche{
+	padding: 10px;
+}
+
+#affichageMesure{
+	position:absolute;
+	left:62px;
+	top:35px;
+	z-index:1000;
+}
+
+.row-no-padding {
+  [class*="col-"] {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+}
